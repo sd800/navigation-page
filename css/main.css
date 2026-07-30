@@ -79,11 +79,11 @@ body {
 	font-family: "Aleo-Regular", Arial, sans-serif;
 	font-size: 18px;
 	letter-spacing: 1px;
-	line-height: 1.4;
+	line-height: 13px;
 }
 
 .content p.description {
-	margin-top: 8px;
+	margin-top: 20px;
 }
 
 .content ul {
@@ -91,11 +91,6 @@ body {
 }
 
 .content a {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	min-height: 44px;
-	padding: 0 8px;
 	-webkit-tap-highlight-color: rgba(226, 255, 234, 0.2);
 }
 
