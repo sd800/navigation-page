@@ -18,16 +18,37 @@
 html {
 	min-width: 320px;
 	min-height: 100%;
-	background: #50cda7;
+	background: transparent;
 	-webkit-text-size-adjust: 100%;
 }
 
 body {
 	display: flex;
+	width: 100%;
 	min-height: 100vh;
-	min-height: 100svh;
+	min-height: 100dvh;
 	margin: 0;
-	background: #50cda7 url("../img/bg_img.jpg") center / cover fixed no-repeat;
+	overflow-x: hidden;
+	background: transparent;
+}
+
+/* Keep every fading background frame edge-to-edge on mobile browsers. */
+.backstretch {
+	position: fixed !important;
+	inset: 0 !important;
+	width: 100vw !important;
+	height: 100vh !important;
+	height: 100dvh !important;
+}
+
+.backstretch img {
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+	max-width: none !important;
+	object-fit: cover;
+	object-position: center;
 }
 
 .wrapper {
